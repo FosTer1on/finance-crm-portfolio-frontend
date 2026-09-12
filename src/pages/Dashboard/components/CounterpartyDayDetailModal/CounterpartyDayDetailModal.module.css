@@ -1,0 +1,110 @@
+.modalTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.alert {
+  margin-bottom: 14px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.date {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.modules {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.module {
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.moduleHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 44px;
+  padding: 8px 14px;
+  background: #fafafa;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.result strong {
+  font-size: 14px;
+}
+
+.positive {
+  color: #389e0d;
+}
+
+.negative {
+  color: #cf1322;
+}
+
+.operationGroups {
+  display: flex;
+  flex-direction: column;
+}
+
+.operationGroup + .operationGroup {
+  border-top: 1px solid var(--border-color);
+}
+
+.operationGroupTitle {
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  background: #fafafa;
+}
+
+.emptyOperations,
+.empty {
+  padding: 18px;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .moduleHeader,
+  .total {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .result {
+    white-space: normal;
+  }
+}

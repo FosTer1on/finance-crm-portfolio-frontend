@@ -1,0 +1,64 @@
+.section {
+  min-width: 0;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.sectionHeader h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1.25;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.result span:first-child {
+  font-size: 11px;
+  color: #8c8c8c;
+}
+
+.readOnly {
+  color: #bfbfbf;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px;
+  color: #cf1322;
+}
+
+.section :global(.ant-table-cell) {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+}
+
+.section :global(.ant-table-thead > tr > th) {
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.section :global(.ant-table-tbody > tr > td) {
+  font-size: 12px;
+}
+
+.section :global(.ant-table-cell) {
+  font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,32 @@
+.root {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 24px;
+
+  background: var(--app-bg);
+}
+
+.card {
+  width: 100%;
+  max-width: 380px;
+}
+
+.heading {
+  margin-bottom: 24px;
+}
+
+.title {
+  margin-bottom: 4px !important;
+}
+
+.error {
+  margin-bottom: 20px;
+}
+
+.submitItem {
+  margin-bottom: 0;
+}

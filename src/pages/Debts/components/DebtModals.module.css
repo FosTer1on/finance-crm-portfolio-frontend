@@ -1,0 +1,65 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.fieldLabel {
+  color: #595959;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.twoColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.error {
+  padding: 8px 10px;
+  color: #cf1322;
+  background: #fff2f0;
+  border: 1px solid #ffccc7;
+  border-radius: 3px;
+}
+
+.debtInfo {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 14px;
+  padding: 10px 12px;
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+}
+
+.debtInfoLabel {
+  color: #777777;
+  font-size: 12px;
+}
+
+.debtInfoValue {
+  min-width: 0;
+  text-align: right;
+}
+
+.hint {
+  color: #777777;
+  font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  .twoColumns {
+    grid-template-columns: 1fr;
+  }
+}

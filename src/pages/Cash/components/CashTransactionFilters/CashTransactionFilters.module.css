@@ -1,0 +1,71 @@
+.root {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  padding: 10px 12px;
+  border-bottom: 1px solid #e8e8e8;
+  background: #fafafa;
+}
+
+.label {
+  flex: 0 0 auto;
+  color: #8c8c8c;
+  font-size: 12px;
+}
+
+.counterparty {
+  flex: 0 0 360px;
+  width: 360px;
+  min-width: 360px;
+}
+
+.currency {
+  flex: 0 0 190px;
+  width: 190px;
+  min-width: 190px;
+}
+
+.counterparty > *,
+.currency > * {
+  width: 100%;
+}
+
+.root button {
+  flex: 0 0 125px;
+  width: 125px;
+  min-width: 125px;
+}
+
+@media (max-width: 900px) {
+  .root {
+    flex-wrap: wrap;
+  }
+
+  .counterparty {
+    flex: 1 1 300px;
+    width: auto;
+    min-width: 240px;
+  }
+
+  .currency {
+    flex: 1 1 180px;
+    width: auto;
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 720px) {
+  .counterparty,
+  .currency {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .root button {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+  }
+}

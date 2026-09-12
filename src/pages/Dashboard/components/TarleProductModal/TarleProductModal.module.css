@@ -1,0 +1,23 @@
+.date {
+  margin-bottom: 12px;
+
+  color: #777;
+  font-size: 12px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 180px;
+}
+
+.net {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+
+  font-size: 12px;
+}

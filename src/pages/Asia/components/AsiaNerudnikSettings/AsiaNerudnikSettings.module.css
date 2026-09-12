@@ -1,0 +1,51 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fields {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.field,
+.save {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.input {
+  width: 140px;
+}
+
+.statusRow {
+  min-height: 22px;
+  font-size: 12px;
+}
+
+@media (max-width: 560px) {
+  .fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .save {
+    grid-column: 1 / -1;
+  }
+
+  .save button {
+    width: 100%;
+  }
+}

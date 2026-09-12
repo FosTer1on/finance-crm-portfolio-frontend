@@ -1,0 +1,41 @@
+.root {
+  display: grid;
+  grid-template-columns:
+    minmax(180px, 1fr)
+    minmax(260px, 1.5fr)
+    max-content;
+  align-items: start;
+  gap: 8px;
+}
+
+.field {
+  min-width: 0;
+}
+
+.field :global(.ant-input),
+.field :global(.ant-input-number) {
+  width: 100%;
+}
+
+.comment {
+  min-width: 220px;
+}
+
+.saveButton {
+  min-width: 100px;
+}
+
+.error {
+  grid-column: 1 / -1;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .root {
+    grid-template-columns: 1fr;
+  }
+
+  .saveButton {
+    width: 100%;
+  }
+}

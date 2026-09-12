@@ -1,0 +1,54 @@
+.audit {
+  margin-top: 24px;
+  padding: 16px;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+
+.title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 4px;
+  color: #8c8c8c;
+  font-size: 13px;
+}
+
+.tableWrap {
+  min-height: 160px;
+}
+
+.auditToolbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.alert {
+  margin-bottom: 10px;
+}
+
+.moneyList {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .audit {
+    padding: 12px;
+  }
+}

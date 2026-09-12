@@ -1,0 +1,52 @@
+.root {
+  display: grid;
+  grid-template-columns:
+    minmax(160px, 1.1fr)
+    minmax(160px, 1fr)
+    90px
+    minmax(150px, 1fr)
+    minmax(160px, 1fr)
+    minmax(200px, 1.3fr)
+    max-content;
+  align-items: start;
+  gap: 8px;
+}
+
+.field {
+  min-width: 0;
+}
+
+.field :global(.ant-select),
+.field :global(.ant-input),
+.field :global(.ant-input-number) {
+  width: 100%;
+}
+
+.comment {
+  min-width: 180px;
+}
+
+.saveButton {
+  min-width: 100px;
+}
+
+.error {
+  grid-column: 1 / -1;
+  font-size: 12px;
+}
+
+@media (max-width: 1200px) {
+  .root {
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    grid-template-columns: minmax(180px, 1fr);
+  }
+
+  .saveButton {
+    width: 100%;
+  }
+}

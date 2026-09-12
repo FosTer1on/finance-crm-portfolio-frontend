@@ -1,0 +1,149 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  min-width: 0;
+  padding: 12px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 120px;
+}
+
+.panel {
+  min-width: 0;
+
+  border: 1px solid var(--color-border);
+
+  background: #fff;
+}
+
+.cashPanel {
+  min-width: 0;
+
+  border: 1px solid var(--color-border);
+
+  background: #fff;
+}
+
+.cashSummaryGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cashSummaryGrid .valueRow {
+  min-height: 46px;
+  border-right: 1px solid #f0f0f0;
+  border-bottom: 0;
+}
+
+.cashSummaryGrid .valueRow:last-child {
+  border-right: 0;
+}
+
+.cashSummaryGrid .valueRow > span:first-child {
+  font-weight: 600;
+}
+
+.cashSummaryGrid :global(.ant-typography) {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.heading {
+  padding: 7px 10px;
+
+  border-bottom: 1px solid var(--color-border);
+
+  background: #f5f5f5;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.summaryGrid .valueRow {
+  border-right: 1px solid #f0f0f0;
+  border-bottom: 0;
+}
+
+.summaryGrid .valueRow:last-child {
+  border-right: 0;
+}
+
+.valueRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  min-height: 35px;
+  padding: 6px 10px;
+
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.valueRow:last-child {
+  border-bottom: 0;
+}
+
+.valueRow > span:first-child {
+  color: #666;
+  font-size: 12px;
+}
+
+.valueRow strong {
+  font-variant-numeric: tabular-nums;
+}
+
+.net {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+
+  font-size: 12px;
+}
+
+.bottomGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+@media (max-width: 1100px) {
+  .summaryGrid,
+  .bottomGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .cashSummaryGrid,
+  .summaryGrid,
+  .bottomGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .cashSummaryGrid .valueRow,
+  .summaryGrid .valueRow {
+    border-right: 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .cashSummaryGrid .valueRow:last-child,
+  .summaryGrid .valueRow:last-child {
+    border-bottom: 0;
+  }
+}

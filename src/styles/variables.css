@@ -1,0 +1,17 @@
+:root {
+  --app-bg: #f5f6f8;
+  --surface-bg: #ffffff;
+
+  --text-primary: #1f1f1f;
+  --text-secondary: #6b7280;
+
+  --border-color: #e5e7eb;
+
+  --bottom-nav-height: 42px;
+
+  --page-padding-x: 20px;
+  --page-padding-y: 16px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+}

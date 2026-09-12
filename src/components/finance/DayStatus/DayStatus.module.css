@@ -1,0 +1,24 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.open {
+  color: #237804;
+}
+
+.closed {
+  color: #595959;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+  background: currentColor;
+}

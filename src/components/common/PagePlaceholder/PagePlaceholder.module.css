@@ -1,0 +1,7 @@
+.root {
+  min-height: 100%;
+}
+
+.content {
+  padding: var(--page-padding-y) var(--page-padding-x);
+}

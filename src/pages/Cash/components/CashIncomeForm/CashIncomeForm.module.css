@@ -1,0 +1,85 @@
+.root {
+  display: grid;
+  grid-template-columns:
+    minmax(180px, 1.3fr)
+    minmax(110px, 0.65fr)
+    minmax(160px, 1fr)
+    minmax(220px, 1.5fr)
+    max-content;
+  align-items: end;
+  gap: 8px;
+}
+
+.field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  color: #595959;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.comment {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 32px;
+  max-height: 80px;
+  padding: 4px 11px;
+  resize: vertical;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  outline: none;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.88);
+  font: inherit;
+  line-height: 22px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.comment:hover {
+  border-color: #4096ff;
+}
+
+.comment:focus {
+  border-color: #1677ff;
+  box-shadow: 0 0 0 2px rgba(5, 145, 255, 0.1);
+}
+
+.comment:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.04);
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.comment::placeholder {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.submit {
+  min-width: 92px;
+}
+
+.error {
+  grid-column: 1 / -1;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .root {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .submit {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .root {
+    grid-template-columns: 1fr;
+  }
+}

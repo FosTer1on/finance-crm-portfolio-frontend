@@ -1,0 +1,90 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.toolbarActions {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.dateControl {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dateLabel {
+  color: #595959;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.placeholderSection {
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.placeholderTitle {
+  padding: 9px 12px;
+  border-bottom: 1px solid #e8e8e8;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.placeholderText {
+  padding: 16px 12px;
+  color: #8c8c8c;
+  font-size: 13px;
+}
+
+.operationSection {
+  min-width: 0;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.sectionHeader {
+  padding: 9px 12px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.formArea {
+  padding: 10px 12px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.tableArea {
+  min-width: 0;
+  padding: 0 12px 12px;
+}
+
+.stickyBalances {
+  position: sticky;
+  top: 8px;
+  z-index: 20;
+}
+
+@media (max-width: 720px) {
+  .toolbarActions {
+    align-items: stretch;
+  }
+
+  .dateControl {
+    width: 100%;
+  }
+}

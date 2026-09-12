@@ -1,0 +1,15 @@
+.root {
+  font-variant-numeric: tabular-nums;
+}
+
+.neutral {
+  color: var(--text-primary);
+}
+
+.positive {
+  color: #237804;
+}
+
+.negative {
+  color: #a8071a;
+}

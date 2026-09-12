@@ -1,0 +1,51 @@
+.root {
+  display: grid;
+  grid-template-columns:
+    minmax(180px, 240px)
+    minmax(180px, 240px)
+    max-content;
+  align-items: end;
+  justify-content: start;
+  gap: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.field :global(.ant-input) {
+  width: 100%;
+}
+
+.button {
+  min-width: 110px;
+  height: 32px;
+}
+
+.submitError {
+  grid-column: 1 / -1;
+  font-size: 12px;
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .root {
+    grid-template-columns: 1fr;
+  }
+
+  .button {
+    width: 100%;
+  }
+}

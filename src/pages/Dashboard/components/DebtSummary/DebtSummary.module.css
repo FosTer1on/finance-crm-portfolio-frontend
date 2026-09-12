@@ -1,0 +1,72 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.heading {
+  padding: 0 4px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.side {
+  min-width: 0;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+}
+
+.sideHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 8px 14px;
+  border-bottom: 1px solid var(--border-color);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.positiveMarker,
+.negativeMarker {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.positiveMarker {
+  background: #52c41a;
+}
+
+.negativeMarker {
+  background: #ff4d4f;
+}
+
+.amountCell {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  min-width: 0;
+}
+
+.previewLabel {
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: #fff7e6;
+  font-size: 10px;
+  line-height: 16px;
+  color: #ad6800;
+  white-space: nowrap;
+}

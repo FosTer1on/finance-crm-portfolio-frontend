@@ -1,0 +1,72 @@
+.section {
+  min-width: 0;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 8px 12px;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px;
+}
+
+.tableBlock {
+  min-width: 0;
+}
+
+.tableTitle {
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.net {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1.25;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.net > span:first-child {
+  color: #8c8c8c;
+  font-size: 11px;
+}
+
+.errorDescription {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.section :global(.ant-table-cell) {
+  padding-top: 6px !important;
+  padding-bottom: 6px !important;
+  font-variant-numeric: tabular-nums;
+}
+
+.section :global(.ant-table-thead > tr > th) {
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+.section :global(.ant-table-tbody > tr > td) {
+  font-size: 12px;
+}

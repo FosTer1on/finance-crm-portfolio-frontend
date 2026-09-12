@@ -1,0 +1,73 @@
+.root {
+  min-height: 100vh;
+  background: var(--app-bg);
+}
+
+.content {
+  min-height: 100vh;
+
+  padding-top: 48px;
+  padding-bottom: calc(var(--bottom-nav-height) + 16px);
+}
+
+.accountArea {
+  position: fixed;
+  top: 8px;
+  right: 12px;
+
+  z-index: 900;
+}
+
+.accountButton {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  height: 32px;
+  max-width: 240px;
+
+  padding: 0 10px;
+
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+
+  color: var(--text-primary);
+  background: var(--surface-bg);
+
+  cursor: pointer;
+}
+
+.accountButton:hover {
+  background: #f8f9fa;
+}
+
+.accountName {
+  overflow: hidden;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.accountArrow {
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+
+  min-width: 160px;
+}
+
+.userName {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.userUsername {
+  margin-top: 2px;
+
+  font-size: 12px;
+  color: var(--text-secondary);
+}

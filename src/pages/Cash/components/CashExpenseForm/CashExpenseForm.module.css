@@ -1,0 +1,49 @@
+.root {
+  display: grid;
+  grid-template-columns:
+    minmax(180px, 1.3fr)
+    minmax(110px, 0.65fr)
+    minmax(160px, 1fr)
+    minmax(220px, 1.5fr)
+    max-content;
+  align-items: end;
+  gap: 8px;
+}
+
+.field {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.label {
+  color: #595959;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.submit {
+  min-width: 92px;
+}
+
+.error {
+  grid-column: 1 / -1;
+  font-size: 12px;
+}
+
+@media (max-width: 900px) {
+  .root {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .submit {
+    width: 100%;
+  }
+}
+
+@media (max-width: 560px) {
+  .root {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,55 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.totals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.totalItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 160px;
+  padding: 10px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  background: #fff;
+  font-variant-numeric: tabular-nums;
+}
+
+.totalItem > :last-child {
+  font-weight: 700;
+}
+
+.resultItem {
+  border-color: #d9d9d9;
+}
+
+.people {
+  min-width: 0;
+}
+
+.subtitle {
+  margin: 0 0 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.netCell {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 700px) {
+  .totalItem {
+    flex: 1 1 160px;
+  }
+}
